@@ -6,9 +6,9 @@
   
   <% if enhanced_cart.length == 0 %>
     <div class="alert alert-info" role="alert">
-      Your cart is currently empty.
+      Your cart is currently empty. <%= link_to 'Return to the Homepage', :root %> to add some items.
     </div>
-    <%= link_to 'Return to Homepage', :root %>
+    
   <% else %>
     <div class="panel panel-default items">
       <table class="table table-bordered">
